@@ -28,8 +28,11 @@ nums [7] = 8;
 console.log(nums);
 console.log(nums.length)
 
+// adds array from behind
 nums.push(9, 10);
 console.log(nums);
+
+// adds array from upfront
 nums.unshift(-2,-1,0);
 console.log(nums);
 
@@ -48,3 +51,17 @@ let player_2 = {
 let players = [player_1, player_2];
 
 console.log(players);
+
+let npc = [{
+    name : "Tarkov",
+    baseHealth : 150,
+    basePower : 50
+},
+{
+    name : "Yunyun",
+    baseHealth : 10,
+    basePower : 250
+}]
+
+let allCharacters =  players.concat(npc);
+console.log(allCharacters);
