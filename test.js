@@ -65,3 +65,38 @@ let npc = [{
 
 let allCharacters =  players.concat(npc);
 console.log(allCharacters);
+
+let names = allCharacters.map(item => item.name);
+
+console.log(names);
+
+console.log(nums.map(function(item, index){
+    return{
+        value: item*index
+    }
+}))
+
+let char_names = ["Circa", "Politoad", "Arceus"];
+console.log (char_names.join(","));
+let pokemon_names = ("bidoof,arceus,pikachu");
+console.log (pokemon_names.split(","));
+
+for(item of allCharacters)
+    {
+        console.log(item.name);
+    }
+// doesnt have to be "item"
+for(segs of allCharacters)
+    {
+        console.log(segs.name);
+    }
+
+// function
+
+function compute (x)
+{
+    let result = (5*x) - 10;
+    return result;
+}
+
+console.log(compute(5));
